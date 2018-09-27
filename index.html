@@ -9,27 +9,64 @@
 
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Acme|Chicle|Permanent+Marker|Ultra" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif|Luckiest+Guy" rel="stylesheet">
     <link rel="shortcut icon" type="image/png" href="assets/images/trump_favicon.png">
 </head>
 
-<body>
+<body background="assets/images/trump_shrug.png">
 
     <!---------------------------------------
             Header
              ------------------------------------>
     <header>
-        <h1>Donald Trump</h1>
+        <h1>The Donald Trump</h1>
         <h2>Trivia Game</h2>
     </header>
 
     <!---------------------------------------
          Section 
          ------------------------------------>
-    <section>
+    <div id="background">
+        <section>
 
 
-    </section>
+            <div class="instructions">
+                <h3>Instructions:</h3>
+                <hr>
+                <p>This is <i>The Donald Trump Trivia Game</i>. You will be provided a quote from our president, Donald Trump,
+                    and you'll need to determine if this an actual quote from Donald Trump or Fake News. Good
+                    Luck!</p>
+            </div>
 
+
+            <div class="scoreboard">
+                <h5 id="wins">Wins: <span id="wins-score"></span></h5>
+                <h5 id="loses">Loses: <span id="loses-score"></span></h5>
+            </div>
+
+
+            <div class="question">
+                <h4>Question:</h4>
+                <hr>
+                <p>"It's really cold outside, they are calling it a major freeze, weeks ahead of normal. Man, we could
+                    use a big fat dose of global warming!"</p>     
+            </div>
+
+            <div id="timer">00:10</div>
+
+            <div class="answer">
+                <h4>Answer:</h4>
+                <hr>
+                <div class="buttons">
+                    <button id="true">He said it</button>
+                    <button id="false">Fake News!</button>
+                </div>
+            </div>
+
+
+        </section>
+    </div>
 
     <!------------------------------------------
         Footer 
@@ -45,7 +82,7 @@
 
 </body>
 
-<script src="javascript/javascript.js"></script>
+<script type="text/javascript" src="assets/javascript/javascript.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 </html>

@@ -1,0 +1,190 @@
+body,
+html {
+  height: 100%;
+}
+
+/* ------------------------------
+HEADER 
+--------------------------------*/
+header {
+  text-align: center;
+  padding: 30px;
+  box-sizing: border-box;
+  background-color: rgb(234, 151, 96);
+}
+
+h1 {
+  font-family: "Chicle", cursive;
+  font-size: 100px;
+}
+
+h2 {
+  font-family: "Chicle", cursive;
+  font-size: 80px;
+}
+#background {
+  background-image: url("assets/images/trump_shrug.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* ------------------------------
+SECTION 
+--------------------------------*/
+section {
+  widows: 60%;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  background: rgb(238, 171, 103);
+  border-radius: 2%;
+  padding: 20px;
+}
+
+hr {
+  margin: 0 5%;
+  border: 1px solid white;
+}
+
+p {
+  font-family: "Ultra", serif;
+}
+
+.instructions h3 {
+  font-size: 20px;
+  font-family: "Ultra", serif;
+  text-align: center;
+  margin-bottom: 5px;
+  margin-top: 20px;
+}
+.instructions p {
+  font-family: "IBM Plex Serif", serif;
+  margin: 5px 5%;
+  margin-top: 20px;
+}
+
+.scoreboard {
+  font-family: "Ultra", serif;
+  text-align: center;
+  /* display:flex; */
+  margin: 50px 0;
+}
+
+/* .scoreboard h5{
+    font-size: 20px;
+    font-family: 'Ultra', serif;
+    text-align: center;
+    margin: 0 50%;
+} */
+
+.question {
+  font-family: "Ultra", serif;
+  margin: 10px 0;
+}
+
+.question h4 {
+  font-size: 20px;
+  font-family: "Ultra", serif;
+  text-align: center;
+  margin-bottom: 5px;
+  margin-top: 50px;
+}
+.question p {
+  font-family: "IBM Plex Serif", serif;
+  margin: 5px 5%;
+  margin-top: 20px;
+}
+
+#timer{
+    text-align: center;
+    margin:30px 40%;
+    background-color:white;
+    width:20%;
+}
+
+.answer h4 {
+  font-size: 20px;
+  font-family: "Ultra", serif;
+  text-align: center;
+  margin-bottom: 5px;
+  margin-top: 30px;
+}
+
+.buttons{
+    display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.answer button {
+ color:black;
+ background-color:white;
+ font-family: "IBM Plex Serif", serif;
+ text-align:center;
+ margin:15px 2%;
+ padding:5px 10px;
+ width:100px;
+ border-radius:5px;
+text-transform: uppercase;
+font-weight:bolder;
+}
+
+/* #true{
+    margin-left:40%;
+    margin-right:5%;
+}
+
+#false{
+    margin-left:5%;
+    margin-right:40%;
+} */
+
+#loses {
+  order: 1;
+}
+
+#wins {
+  order: 2;
+}
+
+/* ------------------------------
+FOOTER 
+--------------------------------*/
+
+footer {
+  background-color: rgba(48, 47, 41, 0.9);
+  height: 70px;
+  position: relative;
+  border-top: 3px green solid;
+  bottom: 0;
+}
+
+footer img {
+  width: 40px;
+  text-align: center;
+  margin: auto;
+  position: relative;
+}
+
+.footer-container {
+  text-align: center;
+}
+
+#github {
+  border-radius: 50%;
+  margin: 10px;
+}
+
+#linkedin {
+  border-radius: 6%;
+  margin: 10px;
+  width: 35px;
+}
+
+#gmail {
+  border-radius: 5%;
+  margin: 10px;
+  margin-bottom: 10px;
+  width: 35px;
+}
