@@ -14,8 +14,9 @@
     <link rel="shortcut icon" type="image/png" href="assets/images/trump_favicon.png">
 </head>
 
-<body background="assets/images/trump_shrug.png">
+<body>
 
+  
     <!---------------------------------------
             Header
              ------------------------------------>
@@ -41,25 +42,27 @@
 
 
             <div class="scoreboard">
-                <h5 id="wins">Wins: <span id="wins-score"></span></h5>
-                <h5 id="loses">Loses: <span id="loses-score"></span></h5>
+                <button type="button" id="start-button">Start!</button>
+
+                <h5>Correct Answers: <span id="Correct-answers"></span></h5>
+                <h5>Wrong Answers: <span id="Wrong-answers"></span></h5>
             </div>
 
 
             <div class="question">
                 <h4>Question:</h4>
                 <hr>
-                <p>"It's really cold outside, they are calling it a major freeze, weeks ahead of normal. Man, we could
-                    use a big fat dose of global warming!"</p>     
+                
+                <p id="question-display"></p>     
             </div>
 
-            <div id="timer">00:10</div>
+            <div id="timer"></div>
 
             <div class="answer">
                 <h4>Answer:</h4>
                 <hr>
                 <div class="buttons">
-                    <button id="true">He said it</button>
+                    <button id="true">He actually said it</button>
                     <button id="false">Fake News!</button>
                 </div>
             </div>
@@ -81,8 +84,8 @@
 
 
 </body>
-
-<script type="text/javascript" src="assets/javascript/javascript.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="assets/javascript/javascript.js"></script>
+
 
 </html>
