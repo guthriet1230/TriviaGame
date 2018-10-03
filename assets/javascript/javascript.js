@@ -79,9 +79,6 @@ $(document).ready(function() {
     $(".instructions").remove();
     $("#question-display").text(questions[count].question);
     run();
-    if (correct + wrong === 10){
-      gameOver();
-    }
 
     /////////////////////////////////////////////////////////
     // Timer Functions
@@ -101,13 +98,17 @@ $(document).ready(function() {
         wrong++;
         $("#Wrong-answers").text(wrong);
         nextQuestion();
-        // alert("Time Up!");
       }
     }
 
     function stop() {
       clearInterval(intervalId);
       intervalId = null;
+    }
+
+    function reset() {
+      wrong = 0;
+      correct = 0;
     }
 
     /////////////////////////////////////////////////////////
@@ -120,6 +121,9 @@ $(document).ready(function() {
       intervalId = setInterval(decrement, 1000);
       decrement();
       count++;
+      if (correct + wrong === 10) {
+        gameOver();
+      }
       $("#question-display").text(questions[count].question);
     }
 
@@ -144,7 +148,7 @@ $(document).ready(function() {
     /////////////////////////////////////////////////////////
     $("#false").on("click", function() {
       // alert("false");
-      if (questions[count] === false) {
+      if (questions[count].answer === false) {
         correct++;
         $("#Correct-answers").text(correct);
         nextQuestion();
@@ -152,18 +156,21 @@ $(document).ready(function() {
         wrong++;
         $("#Wrong-answers").text(wrong);
         nextQuestion();
+        console.log(wrong);
+        console.log(correct);
       }
     });
- /////////////////////////////////////////////////////////
+    /////////////////////////////////////////////////////////
     // Gameover
     /////////////////////////////////////////////////////////
+
     function gameOver() {
+      stop();
       alert("Game is Over");
+      alert("Correct Answers: " + correct);
+      alert("Wrong Answers: " + wrong);
+      reset();
     }
-
-
-
-
   });
 });
 
