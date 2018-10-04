@@ -169,7 +169,7 @@ $(document).ready(function() {
       alert("Game is Over");
       alert("Correct Answers: " + correct);
       alert("Wrong Answers: " + wrong);
-      reset();
+      $("section").text(go);
     }
   });
 });
