@@ -62,7 +62,7 @@ var questions = [
   }
 ];
 
-var tenTimer = 11;
+var tenTimer = 16;
 var correct = 0;
 var wrong = 0;
 var count = 0;
