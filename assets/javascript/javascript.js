@@ -116,7 +116,7 @@ $(document).ready(function() {
     /////////////////////////////////////////////////////////
     function nextQuestion() {
       clearInterval(intervalId);
-      tenTimer = 11;
+      tenTimer = 16;
       intervalId = null;
       intervalId = setInterval(decrement, 1000);
       decrement();
